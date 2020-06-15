@@ -1,0 +1,44 @@
+<html>
+<head>
+    <!--
+    This is the library that provides websocket streaming pub/sub
+    The dev serverver is serving the html and javascript, but it also provides updating fx data on /fx/prices.
+     -->
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+</head>
+<body>
+
+
+    <main class="app">
+        <div class="stock-values header">
+            <div id="stock-name">Stock Name</div>
+            <div id="stock-bestAsk">Best Ask</div>
+            <div id="stock-bestBid">Best Bid</div>
+            <div id="stock-openAsk">Open Ask</div>
+            <div id="stock-openBid">Open Bid</div>
+            <div id="stock-lastChangeAsk">Last Change Ask</div>
+            <div id="stock-lastChangeBid">Last Change Bid</div>
+            <div id="stock-sparkline">Last 30 seconds</div>
+        </div>
+    
+        <div id="stock-tickers"></div>
+    </main>
+    
+<!-- This is a description of what you should do for this task.  You can remove it for your answer -->
+<section class="content">
+   
+    <ul>
+        <li>I would like to use React for its easiness, also libraries like d3.js for better graph </li>
+        <li>NAME:: <b>Gopal Mandloi</b> , EMAIL:: <b>mandloi_g@yahoo.in</b></li>
+    </ul>
+
+   
+</section>
+
+<!-- Code you write in index.js and anything it depends on will be bundled into bundle.js and
+     is included here -->
+<script src="bundle.js"></script>
+
+</body>
+</html>
