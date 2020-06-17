@@ -76,7 +76,9 @@ class StockFunction {
       currentSpark = [0];
       sparks.set(elemId, currentSpark);
     }
-    currentSpark.push(val.toFixed(2));
+    setInterval(() => {
+      currentSpark.push(val.toFixed(2));
+    }, 30000);
     if (currentSpark.length >= 9) { currentSpark.splice(1,1); }
     return currentSpark;
   }
